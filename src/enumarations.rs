@@ -46,3 +46,66 @@ pub fn null_function() {
         SearchResults::NotFound => println!("{} not found in the list", target),
     }
 }
+
+
+//example coin mint
+#[derive(Debug)]
+enum UsState {
+    Alabama,
+    Alaska,
+    Texas,
+}
+
+enum Coin {
+    Penny, 
+    Nickel,
+    Dime, 
+    Quater(UsState),
+    Commemorative,
+    Half_dollar,
+    Dollar_coin,
+}
+
+fn value_in_cents(coin: Coin) -> u8{
+    match coin {
+        Coin::Penny => 1,
+        Coin::Nickel => 5,
+        Coin::Dime=> {
+            println!("Lucky Penny!");
+            1
+        }
+        Coin::Quater(state)=> {
+            println!("State quater from {:?}!", state);
+            25
+        },
+        _ => reroll(),
+    }
+}
+
+//using if let instead of match
+
+fn if_let(coin: Coin)-> u8{
+    let mut count = 0;
+    if let Coin::Quater(state) = coin {
+        println!("State quater from {:?}!", state);
+        count
+    } else {
+        count + 1
+    }
+}
+
+pub fn lucky_coin(){
+    let my_coin = Coin::Dime;
+    let my_coin2 = Coin::Quater(UsState::Alabama);
+    let my_coin3 = Coin::Half_dollar;
+    let my_coin4 = Coin::Quater(UsState::Alabama);
+    value_in_cents(my_coin);
+    value_in_cents(my_coin2);
+    value_in_cents(my_coin3);
+    if_let(my_coin4);
+}
+
+fn reroll()-> u8{
+    println!("Rerolling");
+    78
+}

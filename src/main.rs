@@ -23,6 +23,8 @@ use structs::my_struct;
 use methods::methods;
 use methods::point_method;
 use enumarations::null_function;
+use enumarations::lucky_coin;
+
 fn main() {
     println!("Hello, world!");
     let str = print_string();
@@ -56,5 +58,7 @@ fn main() {
 
     //enumerations
     null_function();
+    lucky_coin();
+
 }
 
