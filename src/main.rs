@@ -5,6 +5,7 @@ mod slices;
 mod structs;
 mod methods;
 mod enumarations;
+mod collections;
 
 use control_flow::print_string;
 use control_flow::control_flow;
@@ -24,6 +25,7 @@ use methods::methods;
 use methods::point_method;
 use enumarations::null_function;
 use enumarations::lucky_coin;
+use collections::collections;
 
 fn main() {
     println!("Hello, world!");
@@ -59,6 +61,9 @@ fn main() {
     //enumerations
     null_function();
     lucky_coin();
+
+    //collections
+    collections();
 
 }
 

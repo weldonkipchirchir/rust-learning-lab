@@ -22,6 +22,8 @@ This project serves as a demonstration of various Rust programming concepts and 
 
 8. **Enumerations**: Introduces Rust enums and showcases their usage in pattern matching and associated functions.
 
+9. **Collections**:  Provides an overview of Rust's standard library collections, including vectors, and hash maps. 
+
 ## Usage
 
 To run the code examples:
