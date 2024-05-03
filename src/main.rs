@@ -6,6 +6,7 @@ mod structs;
 mod methods;
 mod enumarations;
 mod collections;
+mod error_handling;
 
 use control_flow::print_string;
 use control_flow::control_flow;
@@ -26,6 +27,7 @@ use methods::point_method;
 use enumarations::null_function;
 use enumarations::lucky_coin;
 use collections::collections;
+use error_handling::errors_handling_rust;
 
 fn main() {
     println!("Hello, world!");
@@ -64,6 +66,9 @@ fn main() {
 
     //collections
     collections();
+
+    // error handling
+    errors_handling_rust();
 
 }
 

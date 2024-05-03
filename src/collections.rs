@@ -152,4 +152,3 @@ fn hash_maps(){
     }
     println!("{:?}", map);
 }
-
