@@ -7,6 +7,7 @@ mod methods;
 mod enumarations;
 mod collections;
 mod error_handling;
+mod generics;
 
 use control_flow::print_string;
 use control_flow::control_flow;
@@ -28,6 +29,7 @@ use enumarations::null_function;
 use enumarations::lucky_coin;
 use collections::collections;
 use error_handling::errors_handling_rust;
+use generics::generics;
 
 fn main() {
     println!("Hello, world!");
@@ -69,6 +71,9 @@ fn main() {
 
     // error handling
     errors_handling_rust();
+
+    //generics
+    generics();
 
 }
 
