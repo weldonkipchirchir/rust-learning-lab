@@ -8,6 +8,12 @@ mod enumarations;
 mod collections;
 mod error_handling;
 mod generics;
+mod traits;
+mod lifetime;
+mod closures;
+mod iterator;
+mod smart_pointers;
+mod smartpointers_counter_reference;
 
 use control_flow::print_string;
 use control_flow::control_flow;
@@ -30,6 +36,12 @@ use enumarations::lucky_coin;
 use collections::collections;
 use error_handling::errors_handling_rust;
 use generics::generics;
+use traits::traits_demo;
+use lifetime::lifetimes_examples;
+use closures::closures;
+use iterator::iterators;
+use smart_pointers::smart_pointers;
+use smartpointers_counter_reference::smart_pointers_references;
 
 fn main() {
     println!("Hello, world!");
@@ -75,5 +87,22 @@ fn main() {
     //generics
     generics();
 
+    //traits
+    traits_demo();
+
+    //lifetimes
+    lifetimes_examples();
+
+    //closures
+    closures();
+
+    //iterators
+    iterators();
+
+    //smart pointers
+    smart_pointers();
+
+    //smartpointer counter references
+    smart_pointers_references();
 }
 
