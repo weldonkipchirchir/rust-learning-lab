@@ -3,5 +3,21 @@
 version = 3
 
 [[package]]
+name = "cons-list"
+version = "0.0.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b24ca70d1fffa18ed122ad697996482ccf7e8c4b9c6223ed70f024960a2dd172"
+
+[[package]]
 name = "lesson2"
 version = "0.1.0"
+dependencies = [
+ "cons-list",
+ "list",
+]
+
+[[package]]
+name = "list"
+version = "0.1.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "522d1a07016c162161bda4e44a87471282655e828ee613403529a9023e431408"
