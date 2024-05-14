@@ -14,6 +14,7 @@ mod closures;
 mod iterator;
 mod smart_pointers;
 mod smartpointers_counter_reference;
+mod concurrency;
 
 use control_flow::print_string;
 use control_flow::control_flow;
@@ -42,6 +43,7 @@ use closures::closures;
 use iterator::iterators;
 use smart_pointers::smart_pointers;
 use smartpointers_counter_reference::smart_pointers_references;
+use concurrency::concurrency;
 
 fn main() {
     println!("Hello, world!");
@@ -104,5 +106,8 @@ fn main() {
 
     //smartpointer counter references
     smart_pointers_references();
+
+    //concurrency
+    concurrency();
 }
 
