@@ -15,6 +15,8 @@ mod iterator;
 mod smart_pointers;
 mod smartpointers_counter_reference;
 mod concurrency;
+mod oop;
+mod oop_blog_post;
 
 use control_flow::print_string;
 use control_flow::control_flow;
@@ -44,6 +46,8 @@ use iterator::iterators;
 use smart_pointers::smart_pointers;
 use smartpointers_counter_reference::smart_pointers_references;
 use concurrency::concurrency;
+use oop::opp;
+use oop_blog_post::post;
 
 fn main() {
     println!("Hello, world!");
@@ -109,5 +113,11 @@ fn main() {
 
     //concurrency
     concurrency();
+
+    //opp
+    opp();
+
+    // opp blog post example
+    post();
 }
 
