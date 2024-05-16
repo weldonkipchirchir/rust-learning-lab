@@ -17,6 +17,7 @@ mod smartpointers_counter_reference;
 mod concurrency;
 mod oop;
 mod oop_blog_post;
+mod pattern_matching;
 
 use control_flow::print_string;
 use control_flow::control_flow;
@@ -48,6 +49,7 @@ use smartpointers_counter_reference::smart_pointers_references;
 use concurrency::concurrency;
 use oop::opp;
 use oop_blog_post::post;
+use pattern_matching::patter_matching;
 
 fn main() {
     println!("Hello, world!");
@@ -119,5 +121,8 @@ fn main() {
 
     // opp blog post example
     post();
+
+    //pattern matching
+    patter_matching();
 }
 
